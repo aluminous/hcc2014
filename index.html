@@ -70,9 +70,9 @@
         </div>
         <div class="navbar-header notification-area">
     		<a class="navbar-brand" href="list-all.html" target="content">
-    			Quintillian
+    			<span class="glyphicon glyphicon-cloud"></span> Quintillian
     		</a><a class="navbar-brand" href="#" onclick="$('#notificationList').slideToggle()">
-    			<span class="badge badge-important">42</span>
+    			<span class="badge badge-important"><span class="glyphicon glyphicon-bell"></span>42</span>
     		</a>
         </div>
         <div class="collapse navbar-collapse">
@@ -94,34 +94,39 @@
             	Class is cancelled today.
               	<span class="label label-info">CSCI 4830</span>
             </a>
-            <a class="list-group-item" href="#">
-              	"Programming Assignment" is due in 46 minutes
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Programming Assignment 3" is due in 46 minutes.
+              	<span class="label label-info">CSCI 2700</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Design Ethics Paper" has been extended to next Thursday.
               	<span class="label label-info">CSCI 2700</span>
             </a>
             <a class="list-group-item" href="#">
-              	"Programming Assignment" is due in 46 minutes
+            	Class is cancelled today.
+              	<span class="label label-info">CSCI 4830</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Programming Assignment 3" is due in 46 minutes.
               	<span class="label label-info">CSCI 2700</span>
             </a>
-            <a class="list-group-item" href="#">
-              	"Programming Assignment" is due in 46 minutes
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Design Ethics Paper" has been extended to next Thursday.
               	<span class="label label-info">CSCI 2700</span>
             </a>
-            <a class="list-group-item" href="#">
-              	"Programming Assignment" is due in 46 minutes
-              	<span class="label label-info">CSCI 2700</span>
-            </a>
+
           </div><div class="list-group">
-            <a href="#" class="list-group-item active">Your Classes</a>
-            <a href="#" class="list-group-item"><input name="class-all" type="checkbox" checked="1"/> All</a>
-            <a href="#" class="list-group-item"><input name="class-csci2270" type="checkbox" /> CSCI 2270: Data Structures</a>
-            <a href="#" class="list-group-item"><input name="class-csci2400" type="checkbox" /> CSCI 2400: Computer Systems</a>
-            <a href="#" class="list-group-item"><input name="class-csci4830" type="checkbox" /> CSCI 4830: Startup Essentials</a>
+            <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-list-alt"></span> Your Classes</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="class-all" type="checkbox" checked="1"/> All</a>
+            <a target="content" href="list-2400.html" class="list-group-item"><input name="class-csci2270" type="checkbox" /> CSCI 2270: Data Structures</a>
+            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci2400" type="checkbox" /> CSCI 2400: Computer Systems</a>
+            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci4830" type="checkbox" /> CSCI 4830: Startup Essentials</a>
           </div><div class="list-group">
-            <a href="#" class="list-group-item active">Filter</a>
-            <a href="#" class="list-group-item"><input name="filter-all" type="checkbox" checked="1"/> All</a>
-            <a href="#" class="list-group-item"><input name="filter-announce" type="checkbox" /> Announcement</a>
-            <a href="#" class="list-group-item"><input name="filter-assign" type="checkbox" /> Assignment</a>
-            <a href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Post</a>
+            <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-filter"></span> Filter</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item" onclick="$(this).children('input').val(false)"><input name="filter-all" type="checkbox" checked="1"/> All</a>
+            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-announce" type="checkbox" /> Announcement</a>
+            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-assign" type="checkbox" /> Assignment</a>
+            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Post</a>
           </div>
         </div><!--/span-->
         <div class="col-xs-12 col-sm-9 content">
