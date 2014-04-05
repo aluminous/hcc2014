@@ -22,6 +22,14 @@
       	vertical-align: top;
       }
 
+      .badge-important {
+      	background-color: #DD1111;
+      }
+
+      .notification-area {
+      	width: 24%;
+      }
+
       #notificationList {
       	display: none;
       }
@@ -49,13 +57,11 @@
   <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-        	<div class="col-xs-6 col-sm-3">
-        		<a class="navbar-brand" href="#" onclick="$('#notificationList').slideToggle()">
-        			<span style="display:inline-block;" class="badge badge-danger">42</span>
-        			Quintillion
-        		</a>
-        	</div>
+        <div class="navbar-header notification-area">
+    		<a class="navbar-brand" href="#" onclick="$('#notificationList').slideToggle()">
+    			Quintillion
+    			<span class="badge badge-important">42</span>
+    		</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
