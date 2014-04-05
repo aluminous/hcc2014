@@ -40,6 +40,10 @@
       	height: 100%;
       }
 
+      div.content {
+      	height: 100%;
+      }
+
 	  @media (max-width: 980px) {
         /* Enable use of floated navbar text */
         .navbar-text.pull-right {
@@ -51,8 +55,7 @@
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
  	<script src="assets/js/jquery-2.1.0.js"></script>
-
-    <!-- Fav and touch icons -->
+ 	<!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -124,9 +127,9 @@
             <a href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Post</a>
           </div>
         </div><!--/span-->
-        <div class="col-xs-12 col-sm-9">
+        <div class="col-xs-12 col-sm-9 content">
 
-        <iframe name="content" src="assign.html" class="stealth-frame"></iframe>
+        <iframe name="content" id="content" src="assign.html" class="stealth-frame"></iframe>
 
         </div><!--/span-->
 
@@ -140,7 +143,12 @@
     </div><!--/.container-->
 
 
-    <script src="offcanvas.js"></script>
+    <script type="text/javascript">
+	    $('#content').load(function () {
+		    $(this).height($(this).contents().height());
+		    $(this).width($(this).contents().width());
+		});
+    </script>
   </body>
 </html>
 
