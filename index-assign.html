@@ -69,7 +69,7 @@
           </ul>
         </div>
         <div class="navbar-header notification-area">
-    		<a class="navbar-brand" href="list-all.html" target="content">
+    		<a class="navbar-brand" href="index.html">
     			<span class="glyphicon glyphicon-cloud"></span> Quintillian
     		</a><a class="navbar-brand" href="#" onclick="$('#notificationList').slideToggle()">
     			<span class="badge badge-important"><span class="glyphicon glyphicon-bell"></span>42</span>
@@ -94,11 +94,11 @@
             	Class is cancelled today.
               	<span class="label label-info">CSCI 4830</span>
             </a>
-            <a class="list-group-item" href="index-assign.html">
+            <a class="list-group-item" href="assign.html" target="content">
               	"Programming Assignment 3" is due in 46 minutes.
               	<span class="label label-info">CSCI 2700</span>
             </a>
-            <a class="list-group-item" href="index-assign.html">
+            <a class="list-group-item" href="assign.html" target="content">
               	"Design Ethics Paper" has been extended to next Thursday.
               	<span class="label label-info">CSCI 2700</span>
             </a>
@@ -106,42 +106,38 @@
             	Class is cancelled today.
               	<span class="label label-info">CSCI 4830</span>
             </a>
-            <a class="list-group-item" href="index-assign.html">
+            <a class="list-group-item" href="assign.html" target="content">
               	"Programming Assignment 3" is due in 46 minutes.
               	<span class="label label-info">CSCI 2700</span>
             </a>
-            <a class="list-group-item" href="index-assign.html">
+            <a class="list-group-item" href="assign.html" target="content">
               	"Design Ethics Paper" has been extended to next Thursday.
               	<span class="label label-info">CSCI 2700</span>
             </a>
 
           </div><div class="list-group">
-            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-list-alt"></span> Your Classes</a>
-            <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="class-all" type="checkbox" checked="1"/> All</a>
-            <a target="content" href="list-2400.html" class="list-group-item"><input name="class-csci2270" type="checkbox" /> CSCI 2270: Data Structures</a>
-            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci2400" type="checkbox" /> CSCI 2400: Computer Systems</a>
-            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci4830" type="checkbox" /> CSCI 4830: Startup Essentials</a>
+            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-certificate"></span> Outline</a>
+            <a href="#" class="list-group-item">Description</a>
+            <a href="#" class="list-group-item">Submission</a>
+            <a href="#" class="list-group-item">Scheduler</a>
+            <a href="#" class="list-group-item">Comments</a>
           </div><div class="list-group">
-            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-filter"></span> Filter</a>
-            <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="filter-all" type="checkbox" checked="1"/> All</a>
-            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-announce" type="checkbox" /> Announcement</a>
-            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-assign" type="checkbox" /> Assignment</a>
-            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Post</a>
+            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-pencil"></span> Overview</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Submitted 4/1/14</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-paperclip"></span> 1 file (pa4.zip) 2.14 MB</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-calendar"></span> Interview 4/8 1:15p ECCR1B99</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-comment"></span> Not yet graded</a>
           </div><div class="list-group">
-            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-filter"></span>Grades</a>
-            <a href="#" class="list-group-item">
-            	Overall Course Grade
-            	<div class="progress">
-				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-				    90/100
-				  </div>
-				</div>
-            </a>
+            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-list-alt"></span> Resources (4)</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item"><span class="glyphicon glyphicon-eye-open"></span> example-code.c</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item"><span class="glyphicon glyphicon-eye-close"></span> reference.pdf</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item"><span class="glyphicon glyphicon-eye-close"></span> reference.tex</a>
+            <a target="content" href="list-all.html" href="#" class="list-group-item"><span class="glyphicon glyphicon-eye-close"></span> README</a>
           </div>
         </div><!--/span-->
         <div class="col-xs-12 col-sm-9 content">
 
-        <iframe name="content" id="content" src="list-all.html" class="stealth-frame"></iframe>
+        <iframe name="content" id="content" src="assign.html" class="stealth-frame"></iframe>
 
         </div><!--/span-->
 
