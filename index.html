@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Quintillian</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Quintillian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-      .nav-list input[type=checkbox] {
-      	vertical-align: top;
-      }
+  <!-- Le styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .sidebar-nav {
+    padding: 9px 0;
+  }
 
-      .badge-important {
-      	background-color: #DD1111;
-      }
+  .nav-list input[type=checkbox] {
+   vertical-align: top;
+ }
 
-      .notification-area {
-      	width: 24%;
-      }
+ .badge-important {
+   background-color: #DD1111;
+ }
 
-      #notificationList {
-      	display: none;
-      }
+ .notification-area {
+   width: 24%;
+ }
 
-      iframe.stealth-frame {
-      	border: none;
-      	width: 100%;
-      	height: 100%;
-      }
+ #notificationList {
+   display: none;
+ }
 
-      div.content {
-      	height: 100%;
-      }
+ iframe.stealth-frame {
+   border: none;
+   width: 100%;
+   height: 100%;
+ }
 
-	  @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
- 	<script src="assets/js/jquery-2.1.0.js"></script>
- 	<!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+ div.content {
+   height: 100%;
+ }
+
+ @media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="assets/js/jquery-2.1.0.js"></script>
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
 
   <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -84,96 +85,96 @@
       </div><!-- /.container -->
     </div><!-- /.navbar -->
 
-    <div class="container">
+<div class="container">
 
-      <div class="row row-offcanvas row-offcanvas-right">
+  <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-	      <div class="list-group" id="notificationList">
-          	<a class="list-group-item active">Notifications</a>
-            <a class="list-group-item" href="class_cancelled.html" target="content">
-            	Class is cancelled today.
-              	<span class="label label-info">CSCI 4830</span>
-            </a>
-            <a class="list-group-item" href="index-assign.html">
-              	"Programming Assignment 3" is due in 46 minutes.
-              	<span class="label label-info">CSCI 2700</span>
-            </a>
-            <a class="list-group-item" href="index-assign.html">
-              	"Design Ethics Paper" has been extended to next Thursday.
-              	<span class="label label-info">CSCI 2700</span>
-            </a>
-            <a class="list-group-item" href="#">
-            	Class is cancelled today.
-              	<span class="label label-info">CSCI 4830</span>
-            </a>
-            <a class="list-group-item" href="index-assign.html">
-              	"Programming Assignment 3" is due in 46 minutes.
-              	<span class="label label-info">CSCI 2700</span>
-            </a>
-            <a class="list-group-item" href="index-assign.html">
-              	"Design Ethics Paper" has been extended to next Thursday.
-              	<span class="label label-info">CSCI 2700</span>
-            </a>
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+     <div class="list-group" id="notificationList">
+       <a class="list-group-item active"></a>
+       <a class="list-group-item" href="class_cancelled.html" target="content">
+         Class is cancelled today.
+         <span class="label label-info">CSCI 4830</span>
+       </a>
+       <a class="list-group-item" href="index-assign.html">
+         "Programming Assignment 3" is due in 46 minutes.
+         <span class="label label-info">CSCI 2700</span>
+       </a>
+       <a class="list-group-item" href="index-assign.html">
+         "Design Ethics Paper" has been extended to next Thursday.
+         <span class="label label-info">CSCI 2700</span>
+       </a>
+       <a class="list-group-item" href="#">
+         Class is cancelled today.
+         <span class="label label-info">CSCI 4830</span>
+       </a>
+       <a class="list-group-item" href="index-assign.html">
+         "Programming Assignment 3" is due in 46 minutes.
+         <span class="label label-info">CSCI 2700</span>
+       </a>
+       <a class="list-group-item" href="index-assign.html">
+         "Design Ethics Paper" has been extended to next Thursday.
+         <span class="label label-info">CSCI 2700</span>
+       </a>
 
-          </div><div class="list-group">
-            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-list-alt"></span> Your Classes</a>
-            <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="class-all" type="checkbox" checked="1"/> All</a>
-            <a target="content" href="list-2400.html" class="list-group-item"><input name="class-csci2270" type="checkbox" /> CSCI 2270: Data Structures</a>
-            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci2400" type="checkbox" /> CSCI 2400: Computer Systems</a>
-            <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci4830" type="checkbox" /> CSCI 4830: Startup Essentials</a>
-          </div><div class="list-group">
-            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-filter"></span> Filter</a>
-            <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="filter-all" type="checkbox" checked="1"/> All</a>
-            <a target="content" href="list-announce.html" href="#" class="list-group-item"><input name="filter-announce" type="checkbox" /> Announcement</a>
-            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-assign" type="checkbox" /> Assignment</a>
-            <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Post</a>
-          </div><div class="list-group">
-            <a href="#" class="list-group-item" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-font"></span> Grades</a>
-            <a href="#" class="list-group-item" style="display: none">
-            	CSCI 2270: Data Structures
-            	<div class="progress">
-				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-				    90/100
-				  </div>
-				</div>
-          CSCI 2400: Computer Systems
-          <div class="progress">
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-            85/100
-          </div>
-        </div>
-        CSCI 4830: Startup Essentials
-          <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-            100/100
-          </div>
-        </div>
-            </a>
-          </div>
-        </div><!--/span-->
-        <div class="col-xs-12 col-sm-9 content">
+     </div><div class="list-group">
+     <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-list-alt"></span> Your Classes</a>
+     <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="class-all" type="checkbox" checked="1"/> All</a>
+     <a target="content" href="list-2400.html" class="list-group-item"><input name="class-csci2270" type="checkbox" /> CSCI 2270: Data Structures</a>
+     <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci2400" type="checkbox" /> CSCI 2400: Computer Systems</a>
+     <a target="content" href="list-2400.html" href="#" class="list-group-item"><input name="class-csci4830" type="checkbox" /> CSCI 4830: Startup Essentials</a>
+   </div><div class="list-group">
+   <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-filter"></span> Filters</a>
+   <a target="content" href="list-all.html" href="#" class="list-group-item"><input name="filter-all" type="checkbox" checked="1"/> All</a>
+   <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-assign" type="checkbox" /> Assignments</a>
+   <a target="content" href="list-announce.html" href="#" class="list-group-item"><input name="filter-announce" type="checkbox" />Class Announcements</a>
+   <a target="content" href="list-assignments.html" href="#" class="list-group-item"><input name="filter-discuss" type="checkbox" /> Discussion Posts</a>
+ </div><div class="list-group">
+ <a href="#" class="list-group-item" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-font"></span> Grades</a>
+ <a href="#" class="list-group-item" style="display: none">
+   CSCI 2270: Data Structures
+   <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+      90/100
+    </div>
+  </div>
+  CSCI 2400: Computer Systems
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+      85/100
+    </div>
+  </div>
+  CSCI 4830: Startup Essentials
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+      100/100
+    </div>
+  </div>
+</a>
+</div>
+</div><!--/span-->
+<div class="col-xs-12 col-sm-9 content">
 
-        <iframe name="content" id="content" src="list-all.html" class="stealth-frame"></iframe>
+  <iframe name="content" id="content" src="list-all.html" class="stealth-frame"></iframe>
 
-        </div><!--/span-->
+</div><!--/span-->
 
-      </div><!--/row-->
+</div><!--/row-->
 
-      <hr>
+<hr>
 
-      <footer>
-        <p>&copy; Quintillian 2014</p>
-      </footer>
-    </div><!--/.container-->
+<footer>
+  <p>&copy; Quintillian 2014</p>
+</footer>
+</div><!--/.container-->
 
 
-    <script type="text/javascript">
-	    $('#content').load(function () {
-		    $(this).height($(this).contents().height());
-		    $(this).width($(this).contents().width());
-		});
-    </script>
-  </body>
+<script type="text/javascript">
+$('#content').load(function () {
+  $(this).height($(this).contents().height());
+  $(this).width($(this).contents().width());
+});
+</script>
+</body>
 </html>
 

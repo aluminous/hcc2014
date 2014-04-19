@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quintillian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      .nav-list input[type=checkbox] {
+      	vertical-align: top;
+      }
+
+      .badge-important {
+      	background-color: #DD1111;
+      }
+
+      .notification-area {
+      	width: 24%;
+      }
+
+      #notificationList {
+      	display: none;
+      }
+
+      iframe.stealth-frame {
+      	border: none;
+      	width: 100%;
+      	height: 100%;
+      }
+
+      div.content {
+      	height: 100%;
+      }
+
+	  @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+ 	<script src="assets/js/jquery-2.1.0.js"></script>
+ 	<!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-collapse navbar-right" href="#">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Account</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-cog"></i></a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+        <div class="navbar-header notification-area">
+    		<a class="navbar-brand" href="index.html">
+    			<span class="glyphicon glyphicon-cloud"></span> Quintillian
+    		</a><a class="navbar-brand" href="#" onclick="$('#notificationList').slideToggle()">
+    			<span class="badge badge-important"><span class="glyphicon glyphicon-bell"></span>6</span>
+    		</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="new_forum.html" target="content">Start a discussion</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+	      <div class="list-group" id="notificationList">
+          	<a class="list-group-item active">Notifications</a>
+            <a class="list-group-item" href="class_cancelled.html" target="content">
+            	Class is cancelled today.
+              	<span class="label label-info">CSCI 4830</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Programming Assignment 3" is due in 46 minutes.
+              	<span class="label label-info">CSCI 2700</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Design Ethics Paper" has been extended to next Thursday.
+              	<span class="label label-info">CSCI 2700</span>
+            </a>
+            <a class="list-group-item" href="#">
+            	Class is cancelled today.
+              	<span class="label label-info">CSCI 4830</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Programming Assignment 3" is due in 46 minutes.
+              	<span class="label label-info">CSCI 2700</span>
+            </a>
+            <a class="list-group-item" href="assign.html" target="content">
+              	"Design Ethics Paper" has been extended to next Thursday.
+              	<span class="label label-info">CSCI 2700</span>
+            </a>
+
+          </div><div class="list-group">
+            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-user"></span> Profile</a>
+            <a href="#" class="list-group-item">Picture</a>
+            <a href="#" class="list-group-item">Biography</a>
+            <a href="#" class="list-group-item">Interests</a>
+            <a href="#" class="list-group-item">Contact Info</a>
+            <a href="#" class="list-group-item">Schedule</a>
+            <a href="#" class="list-group-item">My Classes</a>
+          </div>
+          <div class="list-group">
+            <a href="#" class="list-group-item active" onclick="$(this).toggleClass('active').siblings().toggle()"><span class="glyphicon glyphicon-cog"></span> Settings</a>
+          </div>
+        </div><!--/span-->
+        <div class="col-xs-12 col-sm-9 content">
+
+        <iframe name="content" id="content" src="account.html" class="stealth-frame"></iframe>
+
+        </div><!--/span-->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Quintillian 2014</p>
+      </footer>
+    </div><!--/.container-->
+
+
+    <script type="text/javascript">
+	    $('#content').load(function () {
+		    $(this).height($(this).contents().height());
+		    $(this).width($(this).contents().width());
+		});
+    </script>
+  </body>
+</html>
+
