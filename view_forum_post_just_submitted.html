@@ -45,6 +45,7 @@
 
     <body>
       <div class="container">
+      <div class="alert alert-success">Your post was submitted successfully!</div>
         <h2>Forum Post</h2>
       </div>
       <div class="row">
@@ -89,7 +90,7 @@
 int main(int argc, char **argv)
 {
     char input[MAX], *key;
- 
+
     if(argc != 3) // check the arguments
     {
         printf("ERROR: invalid arguments\n\n");
@@ -97,18 +98,18 @@ int main(int argc, char **argv)
         printf("%s [input] [output]\n", argv[0]);
         return EXIT_FAILURE;
     }
-     
+
     /* get the key */
     printf("Key plz: ");
     fgets(input, MAX, stdin);
     key = malloc(strlen(input) + 1);
     strcpy(key, input);
-     
+
     xorenc(argv[1], argv[2], key);
-     
+
     free(key);
     return 0;
-} 
+}
 </code></pre>
       </div>
 
